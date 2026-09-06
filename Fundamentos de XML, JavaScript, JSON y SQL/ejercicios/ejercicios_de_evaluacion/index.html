@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios de evaluación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- EJERCICIO 1 -->
+  <h2>Ejercicio 1</h2>
+  <h3>Obtener persona con mayor edad</h3>
+  <ul id="listaPersonas">
+    <li>
+      Persona 1: Nombre: Ana, Edad: 28 años
+    </li>
+    <li>
+      Persona 2: Nombre: Luis, Edad: 34 años
+    </li>
+    <li>
+      Persona 3: Nombre: Marta, Edad: 22 años
+    </li>
+    <li>
+      Persona 4: Nombre: Carlos, Edad: 40 años
+    </li>
+    <li>
+      Persona 5: Nombre: Elena, Edad: 30 años
+    </li>
+  </ul>
+
+  <form id="checkOlderPersonForm">
+    <button id="Button">Comprobar edad</button>
+  </form>
+
+  <!-- Contenedor para resultado -->
+  <div id="checkOlderPersonResult"></div>
+
+  <hr>
+
+  <!-- EJERCICIO 2 -->
+  <h2>Ejercicio 2</h2>
+  <h3></h3>
+
+  <div id="incrementar">
+    1
+  </div>
+
+  <!-- EJERCICIO 3 -->
+  <h2>Ejercicio 3</h2>
+  <h3>Gestión de documentos</h3>
+
+  <div class="container">
+    <div class="form-section">
+      <!-- Formulario para crear documento -->
+      <div class="form-group">
+        <h4>Crear documento</h4>
+        <input type="text" id="nombreDocumento" placeholder="Introduce el nombre del documento" required>
+        <button id="AddNewDocumentBtn">Crear nuevo documento</button>
+      </div>
+
+      <!-- Formulario para añadir artículo -->
+      <div class="form-group">
+        <h4>Añadir nuevo artículo</h4>
+        <input type="text" id="nameArticle" placeholder="Introduce el nombre del artículo" required>
+        <textarea id="textContentArticle" placeholder="Introduce el contenido del artículo" required></textarea>
+        <select id="posicionArticulo">
+          <option value="addToBeginning">Añadir al principio</option>
+          <option value="addToTheEnd">Añadir al final</option>
+        </select>
+        <button id="AddNewArticleBtn">Añadir artículo</button>
+      </div>
+
+      <!-- Formulario para eliminar artículos -->
+      <div class="form-group">
+        <h4>Eliminar Artículo</h4>
+        <label for="articlePosition">Posición del Artículo a Eliminar:</label>
+        <input type="number" id="articlePosition" placeholder="0" min="0">
+        <button id="deleteArticleBtn" class="danger-btn">Eliminar Artículo</button>
+
+        <!-- Mensajes de error/éxito -->
+            <div id="errorMessage" class="error-message"></div>
+            <div id="successMessage" class="success-message"></div>
+      </div>       
+    </div>
+
+    <!-- Sección de visualización del documento -->
+        <div class="document-section">
+          <h4>Documento Actual</h4>
+          <div id="documentDisplay" class="document-display">
+            <!-- Aquí se mostrará el contenido del documento -->
+          </div>          
+        </div> 
+  </div>
+
+  <!-- <form id="CreateDocumentForm">
+    <input type="text" id="nombreDocumento" placeholder="Introduce el nombre del documento" required>
+    <button id="Button">Crear documento</button>
+  </form>
+
+  <form id="addNewArticleForm">
+    <input type="text" id="textoArticulo" placeholder="Introduce el texto del artículo" required>
+    <select name="" id="">
+      <option value="addToBeginning"></option>
+      <option value="addToTheEnd"></option>
+    </select>
+    <button id="Button">Añadir artículo</button>
+  </form> -->
+
+  <script src="./ejer01.js"></script>
+  <script src="./ejer02.js"></script>
+  <script src="./ejer03.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#checkOlderPersonResult,
+#resultadoCountDown,
+#resultadoAnyoEdad {
+    margin-top: 15px;
+    padding: 10px;
+    height: 8vh;
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+#incrementar {
+    cursor: pointer;
+    user-select: none;
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#incrementar:hover {
+    background-color: #532488;
+}
+
+#incrementar:active {
+    background-color: #623199;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.form-section,
+.document-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

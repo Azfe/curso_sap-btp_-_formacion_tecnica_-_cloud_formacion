@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 20</title>
+</head>
+<body>
+  <h2>Ejercicio 1</h2>
+  <h3>Buscando al culpable:</h3>
+  <form id="guiltyForm">
+    <label for="culpable">¿Eres culpable del crimen?</label>
+
+    <select id="guilty" required>
+      <option value="">--Selecciona una opción--</option>
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select><br><br>
+
+    <button type="submit">Procesar</button>
+  </form>
+
+  <!-- Contenedor para el resultado -->
+  <div id="resultado"></div>
+
+  <!-- EJERCICIO 2 -->
+  <h2>Ejercicio 2</h2>
+  <h3>¿Número par o impar?:</h3>
+
+  <form id="numForm">
+    <label for="nombre">Introduce un número:</label>
+    <input type="number" id="number" required><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Contenedor para resultado de número -->
+  <div id="resultadoNúmero"></div>
+
+  <!-- EJERCICIO 3 -->
+  <h2>Ejercicio 3</h2>
+  <h3>Comprar helado:</h3>
+
+  <form id="icecreamForm">
+    <label for="helado">Elige un helado:</label>
+    <select name="helado" id="helado">
+      <option value="1.5">Helado pequeño - 1.50€</option>
+      <option value="1.7">Helado mediano - 1.70€</option>
+      <option value="2.5">Helado grande - 2.50€</option>
+      <option value="3.0">Helado XXL - 3.00€</option>
+    </select><br><br>
+
+    <select name="topping" id="topping">
+      <option value="">--Sin topping - 0€--</option>
+      <option value="oreo">Topping de oreo - 1€</option>
+      <option value="kitkat">Topping de Kitkat - 1.50€</option>
+      <option value="brownie">Topping de brownie - 0.75€</option>
+      <option value="lacasitos">Topping de lacasitos - 0.95€</option>
+    </select><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Contenedor para resultado del helado -->
+  <div id="resultadoHelado"></div>
+
+  <!-- EJERCICIO 4 -->
+  <h2>Ejercicio 4</h2>
+  <h3>Día de la semana:</h3>
+
+  <form id="diaSemanaForm">
+    <label for="">Introduce número del día de la semana:</label>
+    <input type="number" id="diaNumero" min="1" max="7" required>
+    <button id="checkDayButton">Comprobar día</button>
+  </form>
+
+  <!-- Contenedor para resultado del helado -->
+  <div id="resultadoDiaSemana"></div>
+
+   <!-- EJERCICIO 5 -->
+  <h2>Ejercicio 5</h2>
+  <h3>Comprobar valor absoluto:</h3>
+
+  <form id="numEnteroForm">
+    <label for="">Introduce un número entero:</label>
+    <input type="number" id="numEntero" required>
+    <button id="checkNumButton">Comprobar número</button>
+  </form>
+
+  <!-- Contenedor para resultado del helado -->
+  <div id="resultadoNumEntero"></div>
+
+  <!-- EJERCICIO 6 -->
+  <h2>Ejercicio 6</h2>
+  <h3>Comparar nombres de dos personas</h3>
+
+  <form id="compareNamesForm">
+    <label for="">Introduce los nombres de dos personas:</label><br>
+    <input type="text" id="namePerson1" placeholder="Introduce nombre de la primera persona" required>
+    <input type="text" id="namePerson2" placeholder="Introduce nombre de la segunda persona" required>
+
+    <button id="comprobarButton">Comparar nombres</button>
+  </form>
+
+  <!-- Contenedor para resultado -->
+  <div id="resultadoCoincidencia"></div>
+
+  <!-- EJERCICIO 7 -->
+  <h2>Ejercicio 7</h2>
+  <h3>Votar a candidato</h3>
+
+  <form id="miVotoForm">
+    <label for="">Registrar mi voto:</label>
+    <select name="votar" id="miVoto" required>
+      <option value="A">Candidato A</option>
+      <option value="B">Candidato B</option>
+      <option value="C">Candidato C</option>
+    </select>
+
+    <button id="miVotoButton">Registrar voto</button>
+  </form>
+
+  <!-- Contenedor para resultado del voto -->
+  <div id="resultadoMiVoto"></div>
+
+  <!-- EJERCICIO 8 -->
+  <h2>Ejercicio 8</h2>
+  <h3>Comprobar vocal</h3>
+
+  <form id="checkVowelForm">
+    <input type="text" id="letra" placeholder="Introduce una letra" required>
+
+    <button id="Button">Comprobar si es vocal</button>
+  </form>
+
+  <!-- Contenedor para resultado -->
+  <div id="resultadoLetra"></div>
+  
+  <script src="./ejer01.js"></script>
+  <script src="./ejer02.js"></script>
+  <script src="./ejer03.js"></script>
+  <script src="./ejer04.js"></script>
+  <script src="./ejer05.js"></script>
+  <script src="./ejer06.js"></script>
+  <script src="./ejer07.js"></script>
+  <script src="./ejer08.js"></script>
+</body>
+</html>
